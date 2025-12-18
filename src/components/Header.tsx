@@ -10,7 +10,7 @@ import { scrollTo } from '@/utils/scrollTo'
 import { useActiveSection } from '@/utils/useActiveSection'
 
 export function Header() {
-    const activeSection = useActiveSection(["home", "features"])
+    const activeSection = useActiveSection(["home", "features", "capabilities", "company"])
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <header className="fixed left-1/2 top-4 z-50 w-[calc(100%-1.5rem)] max-w-6xl -translate-x-1/2 rounded-full border border-[#E6E49F]/30 bg-background backdrop-blur-xl shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
@@ -52,6 +52,15 @@ export function Header() {
                         Features
                     </button>
                     <button
+                        onClick={() => scrollTo("capabilities")}
+                        className=
+                        {
+                            `text-sm/6 font-semibold text-foreground header-link ${activeSection === "capabilities" ? "active" : ""}`
+                        }
+                    >
+                        Capabilities
+                    </button>
+                    <button
                         onClick={() => scrollTo("company")}
                         className=
                         {
@@ -59,15 +68,6 @@ export function Header() {
                         }
                     >
                         Company
-                    </button>
-                    <button
-                        onClick={() => scrollTo("about")}
-                        className=
-                        {
-                            `text-sm/6 font-semibold text-foreground header-link ${activeSection === "about" ? "active" : ""}`
-                        }
-                    >
-                        About
                     </button>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -105,38 +105,38 @@ export function Header() {
                                 <button
                                     onClick={() => {
                                         scrollTo("home")
-                                        setMobileMenuOpen(false)
+                                        requestAnimationFrame(() => scrollTo("home"))
                                     }}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link"
+                                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link ${activeSection === "home" ? "active" : ""}`}
                                 >
                                     Home
                                 </button>
                                 <button
                                     onClick={() => {
                                         scrollTo("features")
-                                        setMobileMenuOpen(false)
+                                        requestAnimationFrame(() => scrollTo("features"))
                                     }}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link"
+                                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link ${activeSection === "features" ? "active" : ""}`}
                                 >
                                     Features
                                 </button>
                                 <button
                                     onClick={() => {
-                                        scrollTo("company")
-                                        setMobileMenuOpen(false)
+                                        scrollTo("capabilities")
+                                        requestAnimationFrame(() => scrollTo("capabilities"))
                                     }}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link"
+                                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link ${activeSection === "capabilities" ? "active" : ""}`}
                                 >
-                                    Company
+                                    Capabilities
                                 </button>
                                 <button
                                     onClick={() => {
-                                        scrollTo("about")
-                                        setMobileMenuOpen(false)
+                                        scrollTo("company")
+                                        requestAnimationFrame(() => scrollTo("company"))
                                     }}
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link"
+                                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 header-link ${activeSection === "company" ? "active" : ""}`}
                                 >
-                                    About
+                                    Company
                                 </button>
                             </div>
                             <div className="py-6">

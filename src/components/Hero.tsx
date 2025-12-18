@@ -22,7 +22,7 @@ export function Hero() {
                 </motion.span>
 
                 <h1
-                    className="text-center text-4xl font-semibold leading-tight text-foreground/900 sm:text-5xl lg:text-6xl"
+                    className="text-center text-4xl font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl"
                 >
                     <motion.span
                         className="block"
@@ -33,7 +33,7 @@ export function Hero() {
                         Living paycheck to paycheck?
                     </motion.span>
                     <motion.span
-                        className="block text-foreground"
+                        className="block text-[#ff8010]"
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1, transition: { duration: 1, delay: 2 } }}
                         viewport={{ once: true }}

@@ -3,6 +3,7 @@ import { Header } from "@/components/Header"
 import { HomePageBento } from "@/components/HomePageBento"
 import { Footer } from "@/components/Footer"
 import { Hero } from "@/components/Hero"
+import { FeaturesSectionContent } from "@/components/FeaturesSection"
 
 export function HomePage() {
     return (
@@ -11,19 +12,16 @@ export function HomePage() {
             <section id="home" className="scroll-mt-32">
                 <Hero />
             </section>
-            <section id="features" className="scroll-mt-32">
-                <GravityStarsBackground
-                    className="w-full min-h-[1600px] md:min-h-[1200px] lg:min-h-[1300px]"
-                    starsCount={110}
-                    starsOpacity={0.45}
-                    starsSize={2}
-                    glowIntensity={12}
-                    mouseInfluence={70}
-                    gravityStrength={60}
-                />
+            <section id="features" className="relative scroll-mt-32 overflow-hidden">
+                <GravityStarsBackground />
+                <FeaturesSectionContent />
+            </section>
+            <section id="capabilities" className="relative scroll-mt-32 overflow-hidden">
                 <HomePageBento />
             </section>
-            <Footer />
+            <section id="company" className="relative scroll-mt-32 overflow-hidden">
+                <Footer />
+            </section>
         </div >
     )
 }

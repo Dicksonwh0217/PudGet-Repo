@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 export function HomePageBento() {
   return (
-    <div className="bg-background py-24 sm:py-32 transition-colors duration-500">
+    <section className="py-24 sm:py-32 transition-colors duration-500">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <motion.div
           initial={{
@@ -132,6 +132,6 @@ export function HomePageBento() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   )
 }
