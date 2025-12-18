@@ -2,7 +2,7 @@ import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 
 export function Footer() {
     return (
-        <footer className="relative isolate overflow-hidden bg-[color:var(--background)] text-foreground py-16 sm:py-20 lg:py-24">
+        <footer className="relative isolate overflow-hidden bg-[color:var(--background)] text-foreground py-16 sm:py-20 lg:py-24 rounded-t-4xl border-t-2 border-foreground">
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-foreground/5 transition-colors duration-500" />
             <div className="pointer-events-none absolute -left-24 -top-20 h-72 w-72 rounded-full bg-primary/15 blur-3xl" />
             <div className="pointer-events-none absolute right-[-6rem] bottom-[-4rem] h-80 w-80 rounded-full bg-foreground/10 blur-3xl" />
@@ -34,7 +34,7 @@ export function Footer() {
                             />
                             <button
                                 type="submit"
-                                className="inline-flex items-center justify-center rounded-full bg-[#E06D06] px-6 py-3 text-sm font-semibold text-[#25291C] shadow-[0_15px_40px_rgba(224,109,6,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(224,109,6,0.45)]"
+                                className="inline-flex items-center justify-center rounded-full bg-[#E06D06] px-6 py-3 text-sm font-semibold text-[#25291C] shadow-[0_15px_40px_rgba(224,109,6,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(224,109,6,0.45)] cursor-pointer"
                             >
                                 Subscribe
                             </button>

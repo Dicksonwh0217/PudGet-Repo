@@ -348,10 +348,10 @@ function GravityStarsBackground({
   }, [animate]);
 
   return (
-    <div
+    <section
       ref={containerRef}
       data-slot="gravity-stars-background"
-      className={cn('relative w-full overflow-hidden ', className)}
+      className={cn('relative w-full overflow-hidden scroll-mt-28', className)}
       onMouseMove={(e) => handlePointerMove(e)}
       onTouchMove={(e) => handlePointerMove(e)}
       {...props}
@@ -374,7 +374,7 @@ function GravityStarsBackground({
           }}
         >
           <h1 className="text-4xl md:text-6xl font-bold text-center text-[#E3E7D3]">
-            The{' '}
+            Build Your{' '}
             <ColourfulText
               text="No.1"
               className='inline'
@@ -493,7 +493,7 @@ function GravityStarsBackground({
         </div>
       </div>
       <canvas ref={canvasRef} className="block w-full h-full" />
-    </div>
+    </section>
   );
 }
 

@@ -54,10 +54,10 @@ export function HomePageP1() {
                             }}
                         />
                         <div className="flex flex-wrap gap-4 mt-4">
-                            <button className="rounded-full bg-[#E06D06] px-6 py-3 text-sm font-semibold text-[#25291C] shadow-[0_15px_40px_rgba(224,109,6,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(224,109,6,0.45)]">
+                            <button className="rounded-full bg-[#E06D06] px-6 py-3 text-sm font-semibold text-[#25291C] shadow-[0_15px_40px_rgba(224,109,6,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(224,109,6,0.45)] cursor-pointer">
                                 Get started
                             </button>
-                            <button className="rounded-full border border-[#E3E7D3]/30 px-6 py-3 text-sm font-semibold text-[#E6E49F] transition hover:border-[#E6E49F] hover:bg-[#E6E49F]/10">
+                            <button className="rounded-full border border-[#E3E7D3]/30 px-6 py-3 text-sm font-semibold text-[#E6E49F] transition hover:border-[#E6E49F] hover:bg-[#E6E49F]/10 cursor-pointer">
                                 See how it works
                             </button>
                         </div>

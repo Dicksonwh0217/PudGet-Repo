@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 export function HomePageBento() {
   return (
-    <div className="bg-[color:var(--background)] py-24 sm:py-32 transition-colors duration-500">
+    <div className="bg-background py-24 sm:py-32 transition-colors duration-500">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <motion.div
           initial={{
@@ -78,7 +78,7 @@ export function HomePageBento() {
                 <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                   <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Goal-Driven</p>
                   <p className="mt-2 max-w-lg text-sm/6 text-white max-lg:text-center transition-colors duration-500">
-                    AI consultant will give you get the right advice until your goals are met.
+                    Your AI consultant continuously adjusts advice until your goals are achieved.
                   </p>
                 </div>
                 <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
